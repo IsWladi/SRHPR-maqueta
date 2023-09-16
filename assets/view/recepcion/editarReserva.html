@@ -69,7 +69,7 @@
           <div class="mb-3 d-flex flex-row align-items-center">
             <label for="hotel" class="form-label me-2">Hotel</label>
             <input
-              value="calle los robledos #123"
+              value="Calle lorem ipsum 310"
               type="text"
               disabled
               class="form-control"
@@ -89,9 +89,9 @@
               id="cantidadPersonas"
               aria-label="Cantidad de Personas"
             >
-              <option selected>Selecciona cantidad</option>
+              <option>Selecciona cantidad</option>
               <option value="1">Una</option>
-              <option value="2">Dos</option>
+              <option selected value="2">Dos</option>
               <option value="3">Tres</option>
               <option value="4">Cuatro</option>
             </select>
@@ -105,12 +105,13 @@
               aria-label="Habitación"
               disabled
             >
-              <option selected>Selecciona habitación</option>
+              <option >Selecciona habitación</option>
               <option value="1">Habitación #1</option>
               <option value="2">Habitación #2</option>
               <option value="3">Habitación #3</option>
               <option value="4">Habitación #4</option>
               <option value="5">Habitación #5</option>
+              <option selected value="5">Habitación #5</option>
             </select>
           </div>
 
@@ -123,6 +124,7 @@
               id="rutDni"
               name="rutDni"
               disabled
+              value="11.111.111-1"
             />
           </div>
 
@@ -135,6 +137,7 @@
               class="form-control"
               id="fechaLlegada"
               name="fechaLlegada"
+              value="2023-09-18T10:00"
             />
           </div>
 
@@ -147,6 +150,7 @@
               class="form-control"
               id="fechaSalida"
               name="fechaSalida"
+              value="2023-09-25T10:00"
             />
           </div>
 
@@ -159,12 +163,13 @@
               name="costoTotal"
               disabled
               placeholder="Calculando..."
+              value="$ 550.000"
             />
           </div>
           <div class="mb-3 d-flex justify-content-center">
             <button type="submit" class="btn btn-primary">Actualizar</button>
             <button type="reset" class="btn btn-danger">Eliminar</button>
-            <button type="reset" class="btn btn-warning">Cancelar</button>
+            <button type="reset" class="btn btn-warning" onclick="window.location.href='./reservas.html'">Cancelar</button>
           </div>
         </form>
       </div>
