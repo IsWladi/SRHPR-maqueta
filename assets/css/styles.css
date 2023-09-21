@@ -1,40 +1,74 @@
-*{
-    box-sizing: border-box;
-}
-
-body{
+/* Reset de estilos básicos */
+body, ul, li, p {
     margin: 0;
     padding: 0;
 }
 
-.img{
-    width: 100%;
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
 }
 
-.row{
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Barra de navegación */
+nav {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Carrusel de imágenes */
+.carousel {
     display: flex;
-    padding: 5px;
-    flex-wrap: wrap;
+    overflow: hidden;
 }
 
-.column{
-    flex: 25%;
-    padding: 5px;
+.carousel img {
+    width: 100%;
+    height: auto;
 }
 
-.column img{
-    margin-top: 5px;
+/* Botones de navegación del carrusel */
+.navigation-buttons {
+    text-align: center;
+    margin-top: 10px;
 }
 
-@media (max-width: 800px){
-    .column{
-        flex: 50%;
-    }
+.navigation-buttons button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
 }
 
-@media (max-width: 600px){
-    .column{
-        flex: 100%;
-        padding: 5px;
-    }
+.navigation-buttons button:hover {
+    background-color: #555;
 }
+
+/* Otros estilos personalizados aquí */
+
