@@ -4,49 +4,157 @@
 <head>
     <meta charset="UTF-8" />
     <title>Empleados</title>
-    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../../css/styleViews.css">
+    <script src="../../js/app.js" type="text/javascript" charset="utf-8" async defer></script>
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Hotel Pacific Reef</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Mail</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link">Salir</a>
-                        </li>
-                        <li>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-                                class="bi bi-person-circle" viewBox="0 0 16 16">
-                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
-                                <path fill-rule="evenodd"
-                                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
-                            </svg>
-                        </li>
-                    </ul>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Hotel Pacific Reef</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Empleados</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Roles</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Mail</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Salir</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">User</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3>Empelados</h3>
                 </div>
             </div>
-        </nav>
-    </header>
+            <div class="row">
+                <div class="col-lg-1">Filtro: </div>
+                <div class="col-lg-2"><input type="text" class="form-control" placeholder="ID EMPLEADO" aria-describedby="basic-addon1"></div>
+                <div class="col-lg-2"><input type="text" class="form-control" placeholder="ROL" aria-describedby="basic-addon1"></div>
+                <div class="col-lg-2"><input type="text" class="form-control" placeholder="RUT" aria-describedby="basic-addon1"></div>
+                <div class="col-lg-2"><input type="text" class="form-control" placeholder="SUCURSAL" aria-describedby="basic-addon1"></div>
+                <div class="col-lg-1"><button type="button" class="btn btn-light">Buscar</button></div>
+            </div>
+            <div class="row">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                          <th scope="col">ID</th>
+                          <th scope="col">RUT</th>
+                          <th scope="col">NOMBRE</th>
+                          <th scope="col">APELLIDO P.</th>
+                          <th scope="col">APELLIDO M.</th>
+                          <th scope="col">ROL</th>
+                          <th scope="col">FONO</th>
+                          <th scope="col">CORREO</th>
+                          <th scope="col">-</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">10001</th>
+                          <td>18144807-5</td>
+                          <td>ELENA</td>
+                          <td>LOPEZ</td>
+                          <td>CASTRO</td>
+                          <td>RECEPCIONISTA</td>
+                          <td>952540638</td>
+                          <td>EMAIL@EMAIL.COM</td>
+                          <td><button type="button" class="btn btn-light" >view</button></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">10001</th>
+                            <td>18144807-5</td>
+                            <td>ELENA</td>
+                            <td>LOPEZ</td>
+                            <td>CASTRO</td>
+                            <td>RECEPCIONISTA</td>
+                            <td>952540638</td>
+                            <td>EMAIL@EMAIL.COM</td>
+                            <td><button type="button" class="btn btn-light" >view</button></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">10001</th>
+                            <td>18144807-5</td>
+                            <td>ELENA</td>
+                            <td>LOPEZ</td>
+                            <td>CASTRO</td>
+                            <td>RECEPCIONISTA</td>
+                            <td>952540638</td>
+                            <td>EMAIL@EMAIL.COM</td>
+                            <td><button type="button" class="btn btn-light" >view</button></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">10001</th>
+                            <td>18144807-5</td>
+                            <td>ELENA</td>
+                            <td>LOPEZ</td>
+                            <td>CASTRO</td>
+                            <td>RECEPCIONISTA</td>
+                            <td>952540638</td>
+                            <td>EMAIL@EMAIL.COM</td>
+                            <td><button type="button" class="btn btn-light" >view</button></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">10001</th>
+                            <td>18144807-5</td>
+                            <td>ELENA</td>
+                            <td>LOPEZ</td>
+                            <td>CASTRO</td>
+                            <td>RECEPCIONISTA</td>
+                            <td>952540638</td>
+                            <td>EMAIL@EMAIL.COM</td>
+                            <td><button type="button" class="btn btn-light" >view</button></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">10001</th>
+                            <td>18144807-5</td>
+                            <td>ELENA</td>
+                            <td>LOPEZ</td>
+                            <td>CASTRO</td>
+                            <td>RECEPCIONISTA</td>
+                            <td>952540638</td>
+                            <td>EMAIL@EMAIL.COM</td>
+                            <td><button type="button" class="btn btn-light" >view</button></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">10001</th>
+                            <td>18144807-5</td>
+                            <td>ELENA</td>
+                            <td>LOPEZ</td>
+                            <td>CASTRO</td>
+                            <td>RECEPCIONISTA</td>
+                            <td>952540638</td>
+                            <td>EMAIL@EMAIL.COM</td>
+                            <td><button type="button" class="btn btn-light" >view</button></td>
+                          </tr>
+                      </tbody>                    
+                </table>
+            </div>
+        </div>
+    </section>
 
 
-    <footer class="text-center">@Todos los derechos reservados</footer>
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"
-    ></script>
+  <footer class="text-center">@Todos los derechos reservados</footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   </body>
 </html>
