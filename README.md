@@ -7,7 +7,7 @@ Sistema de reservas hotel Pacific Reef
 
 ## Demo Sprint-review
 
-[GitHub pages](www.google.com)
+[GitHub pages](https://iswladi.github.io/SRHPR-maqueta)
 
 
 ## Vistas
