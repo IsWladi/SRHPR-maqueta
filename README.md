@@ -103,6 +103,6 @@ Sistema de reservas hotel Pacific Reef
   ![v2 srhpr](https://github.com/IsWladi/SRHPR-maqueta/assets/133131317/dc7a1355-63e4-40c9-9a66-8a35306895d5)
 
 ## Modelo de base de datos
-
-- Modelo lógico
 - Modelo relacional
+  ![image](https://github.com/IsWladi/SRHPR-maqueta/assets/133131317/75bef4e3-2468-427f-9ad0-1c352c14aa70)
+
